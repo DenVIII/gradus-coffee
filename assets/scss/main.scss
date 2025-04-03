@@ -1,0 +1,57 @@
+@use "./helpers/variables.scss" as *;
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  list-style: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-family-header;
+  color: $text-color;
+}
+
+h1 {
+  font-size: $font-size-xl;
+}
+
+h2 {
+  font-size: $font-size-l;
+}
+
+p,
+a,
+button {
+  font-family: $font-family-main;
+  color: $text-color;
+  font-size: $font-size-n;
+}
+
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: $border-radius-s;
+}
+
+body {
+  background-color: $background-color;
+}
+
+.content {
+  margin: 0 auto;
+}
+
+section {
+  max-width: $content-width;
+}
