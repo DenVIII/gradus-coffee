@@ -16,6 +16,7 @@
       />
     </Head>
   </Html>
+  <nav-bar />
   <main class="content">
     <NuxtPage />
   </main>
