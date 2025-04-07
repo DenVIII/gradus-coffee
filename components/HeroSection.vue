@@ -13,7 +13,10 @@ const sizesConfig = {
 </script>
 
 <template>
-  <section class="hero">
+  <section
+    class="hero"
+    id="hero"
+  >
     <h1 class="hero__header">Градус°</h1>
     <p class="hero__subtitle">Ваш кофе-прогноз на сегодня!</p>
 

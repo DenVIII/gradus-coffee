@@ -71,10 +71,9 @@ onBeforeUnmount(() => {
           <div
             class="navbar__mobile-menu"
             v-if="isMenuOpen"
-            v-click-outside="() => (isMenuOpen = false)"
           >
             <a
-              href="#sale"
+              href="#promo"
               class="navbar__mobile-link"
               @click="isMenuOpen = false"
               >Акции</a
