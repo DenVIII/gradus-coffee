@@ -44,7 +44,7 @@ const props = defineProps<{
 @use "@/assets/scss/helpers/variables.scss" as *;
 .product-card {
   box-sizing: content-box;
-  border: 2px solid $text-color;
+  border: 1px solid #dbdbdb;
   border-radius: 12px;
   width: 200px;
   display: flex;
