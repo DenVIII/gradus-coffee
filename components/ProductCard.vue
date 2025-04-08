@@ -17,17 +17,25 @@ const props = defineProps<{
     <NuxtImg
       :src="product.imageUrl"
       :alt="product.name"
-      width="250"
-      height="250"
+      width="200"
+      height="300"
       class="product-card__image"
     />
     <h3 class="product-card__name">{{ product.name }}</h3>
-    <p class="product-card__price">{{ product.price }} ₽</p>
     <p
-      class="product-card__promo-price"
       v-if="product.discount"
+      class="product-card__price"
     >
-      {{ product.price * (1 - product.discount) }} ₽
+      <span class="product-card__old-price">{{ product.price }} ₽</span>
+      <span class="product-card__promo-price"
+        >{{ product.price * (1 - product.discount) }} ₽</span
+      >
+    </p>
+    <p
+      v-else
+      class="product-card__price"
+    >
+      {{ product.price }} ₽
     </p>
   </div>
 </template>
@@ -36,16 +44,17 @@ const props = defineProps<{
 @use "@/assets/scss/helpers/variables.scss" as *;
 .product-card {
   box-sizing: content-box;
-  margin: 0 auto;
   border: 2px solid $text-color;
   border-radius: 12px;
   width: 200px;
-
+  display: flex;
+  flex-direction: column;
   &__image {
     border-radius: 8px 8px 0 0;
     width: 200px;
     height: 300px;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center top;
     overflow: hidden;
   }
 
@@ -58,17 +67,20 @@ const props = defineProps<{
   &__price,
   &__promo-price {
     padding: 0 1rem 1rem;
-    font-weight: bold;
+
     color: $text-color;
   }
 
   &__price {
-    font-size: $font-size-s;
-    text-decoration: line-through;
+    margin-top: auto;
   }
 
   &__promo-price {
     color: $accent-color;
+  }
+  &__old-price {
+    font-size: $font-size-s;
+    text-decoration: line-through;
   }
 }
 </style>

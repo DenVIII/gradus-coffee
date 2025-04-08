@@ -40,6 +40,9 @@ const promoProduct: Product = {
   }
 
   &__weather-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: auto;
     padding: 1.5rem 3rem;
     background-color: white;

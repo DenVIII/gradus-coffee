@@ -1,0 +1,53 @@
+{
+  "offers": {
+    "hot": [
+      {
+        "imageUrl": "/products/americano.jpg",
+        "name": "Американо",
+        "price": 100
+      },
+      {
+        "imageUrl": "/products/cappuccino.jpg",
+        "name": "Капучино",
+        "price": 120
+      },
+      {
+        "imageUrl": "/products/latte.jpg",
+        "name": "Латте",
+        "price": 200
+      },
+      {
+        "imageUrl": "/products/hot-chocolate.jpg",
+        "name": "Горячий шоколад",
+        "price": 200
+      },
+      {
+        "imageUrl": "/products/fruit-tea.jpg",
+        "name": "Фруктовый чай",
+        "price": 150
+      }
+    ],
+    "cold": [
+      {
+        "imageUrl": "/products/iced-latte.jpg",
+        "name": "Ледяной латте",
+        "price": 200
+      },
+      {
+        "imageUrl": "/products/mint-lemonade.jpg",
+        "name": "Мятный лимонад",
+        "price": 180
+      },
+      {
+        "imageUrl": "/products/milk-tea-green.jpg",
+        "name": "Бабл-ти Личи-Маракуйа",
+        "price": 200
+      },
+      {
+        "imageUrl": "/products/milk-tea-red.jpg",
+        "name": "Бабл-ти Апельсин",
+        "price": 200
+      }
+    ]
+  }
+}
