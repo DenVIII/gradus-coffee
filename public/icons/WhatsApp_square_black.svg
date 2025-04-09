@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="600"
+   height="600"
+   viewBox="0 0 600 600"
+   sodipodi:docname="WhatsApp_square_black.ai"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath16">
+      <path
+         d="M 0,450 H 450 V 0 H 0 Z"
+         id="path14" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <g
+     id="g8"
+     inkscape:groupmode="layer"
+     inkscape:label="WhatsApp_square_black"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,600)">
+    <g
+       id="g10">
+      <g
+         id="g12"
+         clip-path="url(#clipPath16)">
+        <g
+           id="g18"
+           transform="translate(378.2109,-1e-4)">
+          <path
+             d="m 0,0 h -306.422 c -39.484,0 -71.789,32.305 -71.789,71.789 v 306.422 c 0,39.484 32.305,71.789 71.789,71.789 H 0 c 39.484,0 71.789,-32.305 71.789,-71.789 V 71.789 C 71.789,32.305 39.484,0 0,0"
+             style="fill:#231f20;fill-opacity:1;fill-rule:evenodd;stroke:none"
+             id="path20" />
+        </g>
+        <g
+           id="g22"
+           transform="translate(135.3145,114.6796)">
+          <path
+             d="m 0,0 20.217,3.61 12.275,2.166 c 17.329,-9.385 36.102,-14.44 57.041,-14.44 65.705,0 119.137,53.431 119.137,119.137 0,65.706 -53.432,119.137 -119.137,119.137 -65.706,0 -119.137,-53.431 -119.137,-119.137 0,-23.827 7.221,-45.489 18.773,-64.262 l -1.444,-10.83 -2.888,-21.661 -2.166,-16.608 z m 89.533,252.715 c 78.703,0 142.242,-63.54 142.242,-142.242 0,-78.702 -63.539,-142.243 -142.242,-142.243 -21.661,0 -41.878,4.333 -59.929,12.998 l -75.814,-12.998 10.108,75.093 -0.722,1.444 c -10.109,19.496 -15.885,41.879 -15.885,65.706 0,78.702 63.54,142.242 142.242,142.242 M 38.99,175.457 c 7.943,5.054 12.997,1.443 15.885,-6.499 l 7.22,-18.772 c 0,0 5.055,-10.11 -7.942,-20.218 -2.166,-1.444 -2.166,-1.444 -1.444,-5.054 2.888,-8.665 14.441,-34.658 51.265,-54.876 3.61,-2.166 4.332,-2.166 7.942,0.723 2.889,2.887 6.499,6.498 9.387,9.386 6.499,5.777 10.108,7.943 15.884,3.61 4.334,-2.888 8.666,-6.498 12.998,-9.386 4.332,-3.61 11.552,-7.942 4.332,-16.607 l -6.498,-7.943 C 138.632,38.269 130.689,37.547 118.415,40.435 71.482,52.71 36.824,85.924 21.661,132.856 c -5.054,18.051 2.166,33.214 17.329,42.601"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+             id="path24" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

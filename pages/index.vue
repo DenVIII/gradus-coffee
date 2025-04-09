@@ -5,4 +5,5 @@
   <menu-section />
   <about-section />
   <forecast-promo />
+  <contacts-section />
 </template>
