@@ -1,7 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="forecast-promo">
+  <section
+    id="promo"
+    class="forecast-promo"
+  >
     <div class="forecast-promo__content-block">
       <h2 class="forecast-promo__header">Наш сегодняшний прогноз:</h2>
       <div class="forecast-promo__weather">
@@ -17,7 +20,7 @@
       </div>
     </div>
     <NuxtImg
-      src="/products/iced-latte.jpg"
+      src="/products/latte.jpg"
       alt="Ледяной латте"
       width="200"
       height="300"
@@ -29,6 +32,7 @@
 @use "@/assets/scss/helpers/variables.scss" as *;
 
 .forecast-promo {
+  scroll-margin-top: 100px;
   position: relative;
   margin: 0 auto;
   display: flex;

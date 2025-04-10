@@ -23,7 +23,10 @@ onMounted(fetchMenu);
 </script>
 
 <template>
-  <section class="menu">
+  <section
+    id="menu"
+    class="menu"
+  >
     <h2 class="menu__header">Наши напитки:</h2>
     <div class="menu__content-block">
       <p class="menu__subtitle">Согреться:</p>
@@ -50,6 +53,7 @@ onMounted(fetchMenu);
 
 <style lang="scss">
 .menu {
+  scroll-margin-top: 100px;
   &__header {
     text-align: center;
   }

@@ -10,10 +10,7 @@ const promoProduct: Product = {
 </script>
 
 <template>
-  <section
-    class="promo"
-    id="promo"
-  >
+  <section class="promo">
     <h2 class="promo__title">
       А мы подобрали для вас специальное предложение!
     </h2>
@@ -30,6 +27,7 @@ const promoProduct: Product = {
 @use "@/assets/scss/helpers/variables.scss" as *;
 
 .promo {
+  scroll-margin-top: 120px;
   padding: 2rem 0;
   display: flex;
   gap: 2rem;

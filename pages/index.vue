@@ -6,4 +6,5 @@
   <about-section />
   <forecast-promo />
   <contacts-section />
+  <footer-section />
 </template>

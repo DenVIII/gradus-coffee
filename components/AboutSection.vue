@@ -2,7 +2,10 @@
   <div class="container">
     <h2 class="header">Ваш кофе по погоде!</h2>
   </div>
-  <section class="about">
+  <section
+    id="about"
+    class="about"
+  >
     <div class="about__text-block">
       <p class="about__descr">
         Мы следим за температурой за окном, чтобы предложить вам идеальный
@@ -33,6 +36,7 @@
 
 <style lang="scss">
 .about {
+  scroll-margin-top: 100px;
   display: flex;
   margin: 50px auto;
   gap: 50px;

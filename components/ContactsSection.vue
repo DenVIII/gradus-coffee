@@ -1,5 +1,8 @@
 <template>
-  <section class="contacts">
+  <section
+    id="contacts"
+    class="contacts"
+  >
     <NuxtImg
       src="/coffee-cup-red-bg.jpg"
       width="300"
@@ -54,6 +57,7 @@
 
 <style lang="scss">
 .contacts {
+  scroll-margin-top: 100px;
   margin-top: 6rem;
   display: flex;
   gap: 50px;

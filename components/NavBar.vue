@@ -28,7 +28,7 @@ onBeforeUnmount(() => {
     >
       <div class="navbar__container">
         <a
-          href="#home"
+          href="#hero"
           class="navbar__logo"
           >Градус°</a
         >
@@ -46,7 +46,7 @@ onBeforeUnmount(() => {
 
         <div class="navbar__desktop-menu">
           <a
-            href="#sale"
+            href="#promo"
             class="navbar__link"
             >Акции</a
           >
@@ -56,14 +56,14 @@ onBeforeUnmount(() => {
             >Меню</a
           >
           <a
+            href="#about"
+            class="navbar__link"
+            >О нас</a
+          >
+          <a
             href="#contacts"
             class="navbar__link"
             >Контакты</a
-          >
-          <a
-            href="#adress"
-            class="navbar__link"
-            >Адрес</a
           >
         </div>
 
@@ -85,16 +85,16 @@ onBeforeUnmount(() => {
               >Меню</a
             >
             <a
+              href="#about"
+              class="navbar__mobile-link"
+              @click="isMenuOpen = false"
+              >О нас</a
+            >
+            <a
               href="#contacts"
               class="navbar__mobile-link"
               @click="isMenuOpen = false"
               >Контакты</a
-            >
-            <a
-              href="#adress"
-              class="navbar__mobile-link"
-              @click="isMenuOpen = false"
-              >Адрес</a
             >
           </div>
         </transition>
@@ -194,7 +194,9 @@ onBeforeUnmount(() => {
     padding: 0 20px;
     cursor: pointer;
   }
-
+  &__link:hover {
+    color: $primary-color;
+  }
   &__mobile-menu {
     position: fixed;
     top: 100px;
