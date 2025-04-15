@@ -1,12 +1,5 @@
 <script setup lang="ts">
-const img = useImage();
-
-export interface Product {
-  imageUrl: string;
-  name: string;
-  price: number;
-  discount?: number;
-}
+import type { Product } from "~/types/product";
 const props = defineProps<{
   product: Product;
 }>();

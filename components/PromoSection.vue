@@ -1,12 +1,5 @@
 <script setup lang="ts">
-import type { Product } from "./ProductCard.vue";
-
-const promoProduct: Product = {
-  imageUrl: "/products/latte.jpg",
-  name: "Латте",
-  price: 200,
-  discount: 0.2,
-};
+const props = defineProps(["product"]);
 </script>
 
 <template>
@@ -16,10 +9,9 @@ const promoProduct: Product = {
     </h2>
     <div class="promo__weather-offer">
       <p class="promo__weather-text">
-        На улице холодно!<br />
-        Заходите согреться и попробовать:
+        <slot></slot>
       </p>
-      <product-card :product="promoProduct" />
+      <product-card :product="product" />
     </div>
   </section>
 </template>

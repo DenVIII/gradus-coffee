@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Product } from "./ProductCard.vue";
+import type { Product } from "~/types/product";
 
 const hotDrinks = ref<Product[]>([]);
 const coldDrinks = ref<Product[]>([]);

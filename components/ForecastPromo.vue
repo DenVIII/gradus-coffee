@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const props = defineProps(["product", "weather"]);
+</script>
 
 <template>
   <section
@@ -9,18 +11,25 @@
       <h2 class="forecast-promo__header">Наш сегодняшний прогноз:</h2>
       <div class="forecast-promo__weather">
         <p class="forecast-promo__location">Сейчас в Москве:</p>
-        <p class="forecast-promo__temperature">+5°C и 🌧️ небольшой дождь</p>
+        <p class="forecast-promo__temperature">
+          <span class="accent-text"
+            >{{ weather.temp }}°C, а за окном {{ weather.description }}</span
+          >
+        </p>
       </div>
       <div class="forecast-promo__offer">
-        <p>Время согреться! Попробуйте горячий шоколад!</p>
+        <p>Попробуйте {{ product.name }}!</p>
         <p>
-          Всего за <span class="forecast-promo__discount">200 ₽</span> вместо
-          250 ₽ до конца дня!
+          Всего за
+          <span class="forecast-promo__discount"
+            >{{ product.price * (1 - product.discount) }} ₽</span
+          >
+          вместо {{ product.price }} ₽ до конца дня!
         </p>
       </div>
     </div>
     <NuxtImg
-      src="/products/latte.jpg"
+      :src="product.imageUrl"
       alt="Ледяной латте"
       width="200"
       height="300"
@@ -36,7 +45,7 @@
   position: relative;
   margin: 0 auto;
   display: flex;
-  gap: 4rem;
+  gap: 10rem;
   &__weather {
     padding: 1.5rem 0;
   }

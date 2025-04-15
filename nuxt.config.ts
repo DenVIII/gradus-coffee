@@ -2,7 +2,14 @@ import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-
+  runtimeConfig: {
+    public: {
+      weatherApiKey: process.env.OPENWEATHER_API_KEY,
+    },
+    privateRuntimeConfig: {
+      API_TOKEN: process.env.OPENWEATHER_API_KEY,
+    },
+  },
   vite: {
     css: {
       preprocessorOptions: {
