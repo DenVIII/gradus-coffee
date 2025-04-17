@@ -14,7 +14,7 @@
           >
         </p>
 
-        <p>ПН - ВСК: 08:00 - 20:00</p>
+        <p>ПН - ВСК: <span class="footer__hours">08:00 - 20:00</span></p>
       </div>
       <ul class="footer__menu">
         <li class="footer__menu-item"><a href="#">Главная</a></li>
@@ -60,8 +60,13 @@
 .footer {
   background-color: $text-color;
   padding: 2rem 0;
+  &__about {
+    p {
+      padding: 5px 0;
+    }
+  }
   &__content-block {
-    width: $content-width;
+    width: var(--content-width);
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -82,9 +87,51 @@
   }
   &__menu-item {
     padding: 0.25rem 0;
+    width: 70%;
+    margin: 0 auto;
   }
   & * {
     color: $background-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__phone,
+    &__hours {
+      display: inline-block;
+    }
+    &__menu-item {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px;
+    &__content-block {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, auto);
+    }
+    &__logo {
+      font-size: 1.5rem;
+      grid-area: 1 / 1 / 2 / 3;
+    }
+    &__about {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    &__menu {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    &__media {
+      grid-area: 3 / 1 / 4 / 3;
+    }
+    &__media-icon {
+      margin-top: 20px;
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 </style>

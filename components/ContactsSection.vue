@@ -3,12 +3,15 @@
     id="contacts"
     class="contacts"
   >
-    <NuxtImg
-      src="/coffee-cup-red-bg.jpg"
-      width="300"
-      height="450"
-      class="contacts__image"
-    />
+    <div class="contacts__image-wrapper">
+      <NuxtImg
+        src="/coffee-cup-red-bg.jpg"
+        width="300"
+        height="450"
+        class="contacts__image"
+        sizes="250px sm:250px md:250px lg:300px"
+      />
+    </div>
     <div class="contacts__content-block">
       <h2 class="contacts__header">Наши контакты:</h2>
       <p>
@@ -64,8 +67,16 @@
   &__header {
     margin-bottom: 2rem;
   }
+  &__image-wrapper {
+    display: flex;
+    align-items: end;
+  }
   &__image {
     border-radius: 12px 12px 0 0;
+    aspect-ratio: 2/3;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
   &__phone {
     font-weight: bold;
@@ -97,6 +108,36 @@
   }
   &__address {
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    margin-top: 4rem;
+    gap: 30px;
+    &__image-wrapper {
+      width: 200px;
+    }
+    &__content-block {
+      max-width: 60%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contacts {
+    margin-top: 2rem;
+    &__image-wrapper {
+      display: none;
+    }
+    &__content-block {
+      max-width: 100%;
+      padding: 20px 0;
+    }
+    &__media-icon {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 </style>

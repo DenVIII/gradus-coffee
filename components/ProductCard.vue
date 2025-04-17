@@ -19,16 +19,16 @@ const props = defineProps<{
       v-if="product.discount"
       class="product-card__price"
     >
-      <span class="product-card__old-price">{{ product.price }} ₽</span>
+      <span class="product-card__old-price">{{ product.price }}₽</span>
       <span class="product-card__promo-price"
-        >{{ product.price * (1 - product.discount) }} ₽</span
+        >{{ product.price * (1 - product.discount) }}₽</span
       >
     </p>
     <p
       v-else
       class="product-card__price"
     >
-      {{ product.price }} ₽
+      {{ product.price }}₽
     </p>
   </div>
 </template>
@@ -74,6 +74,29 @@ const props = defineProps<{
   &__old-price {
     font-size: $font-size-s;
     text-decoration: line-through;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 140px;
+    &__image {
+      width: 140px;
+      height: 210px;
+    }
+    &__name {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: 2000px) {
+  .product-card {
+    width: 300px;
+    &__image {
+      width: 300px;
+      height: 450px;
+    }
   }
 }
 </style>

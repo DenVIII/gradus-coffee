@@ -146,7 +146,7 @@ onBeforeUnmount(() => {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: 1200px;
+    width: var(--content-width);
     position: relative;
   }
 
@@ -217,17 +217,20 @@ onBeforeUnmount(() => {
 }
 
 @media (max-width: 768px) {
-  .navbar__container {
-    width: 100%;
-    padding: 0 20px;
-  }
-
   .navbar__desktop-menu {
     display: none;
   }
 
   .navbar__burger {
     display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    width: 100vw;
+    padding: 15px 10px;
+    height: auto;
   }
 }
 </style>

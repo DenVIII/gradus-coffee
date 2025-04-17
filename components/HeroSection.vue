@@ -66,5 +66,28 @@ const sizesConfig = {
     border-bottom-left-radius: 250px;
     overflow: hidden;
   }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    &__background {
+      border-bottom-left-radius: 150px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    &__background {
+      border-bottom-left-radius: 60px;
+    }
+  }
 }
 </style>

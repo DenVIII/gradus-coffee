@@ -45,4 +45,17 @@ const props = defineProps(["product"]);
     text-align: center;
   }
 }
+
+@media (max-width: 480px) {
+  .promo {
+    flex-direction: column;
+    padding: 20px 10px;
+    &__title {
+      max-width: 100%;
+    }
+    &__weather-offer {
+      margin: 0 auto;
+    }
+  }
+}
 </style>

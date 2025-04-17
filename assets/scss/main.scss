@@ -1,5 +1,8 @@
 @use "./helpers/variables.scss" as *;
 
+:root {
+  --content-width: 1200px;
+}
 *,
 ::after,
 ::before {
@@ -59,10 +62,59 @@ body {
 }
 
 section {
-  max-width: $content-width;
+  max-width: var(--content-width);
   margin: 0 auto;
 }
 
 .accent-text {
   color: $accent-color;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --content-width: 920px;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --content-width: 85vw;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --content-width: 100%;
+  }
+
+  section {
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  a,
+  li,
+  button {
+    font-size: 1rem;
+  }
+}
+
+/* Динамическая адаптация для больших экранов */
+@media (min-width: 2000px) {
+  :root {
+    font-size: calc(1rem + 0.2vw); /* Плавное увеличение шрифта */
+    --content-width: 80vw;
+  }
 }

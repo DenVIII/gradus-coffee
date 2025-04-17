@@ -36,4 +36,22 @@
     background-color: $background-color;
   }
 }
+
+@media (max-width: 480px) {
+  .promo-statement {
+    border-top-right-radius: 40px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 2rem;
+    &__header {
+      font-size: 2rem;
+    }
+    &::after {
+      width: 24px;
+      height: 24px;
+      right: 1rem;
+      bottom: 1rem;
+    }
+  }
+}
 </style>

@@ -69,4 +69,28 @@ onMounted(fetchMenu);
     gap: 40px;
   }
 }
+
+@media (max-width: 1024px) {
+  .menu {
+    &__products {
+      gap: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    &__products {
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    &__products {
+      gap: 15px;
+    }
+  }
+}
 </style>
